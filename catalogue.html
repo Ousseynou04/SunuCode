@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Page Catalogue</h1>
+    
+    <header>
+        <nav>
+            <a href="about.html">A propos</a> &nbsp;
+            <a href="accueil.html">Acceuil</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Le Fondement du developpement web</h2>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+        </ol>
+ 
+
+        <h2>Info etudiant</h2>
+        <table border="">
+            <tr>
+                <th rowspan="2">SUNUCODE</th>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Filiere</th>
+                <th>profil</th>
+            </tr>
+
+            <tr>
+                <td>Bodian</td>
+                <td>Ousseynou</td>
+                <td>Developpement web</td>
+                <td>junior</td>
+            </tr>
+        </table>
+
+        <img src="images/internet-web.png" alt="internet-web" width="450" height="400">
+
+        <p>Formulaire d'inscription</p>
+
+        <form action="">
+
+    <!-- bloc Information Personnelles -->
+        <fieldset>
+            <legend align="center">Information Personnelles</legend>
+
+            <label for="nom">Nom :</label> 
+            <input type="text" name="nom" id="nom" required> <br> <br>
+
+            <label for="email">Email :</label> 
+            <input type="email" name="mail" id="email"> <br> <br>
+
+            <label for="phone">Telephone :</label> 
+            <input type="tel" name="telephone" id="phone"> 
+        </fieldset> <br>
+
+    <!-- Bloc Détails de l'inscriition -->
+        <fieldset>
+            <legend>Détails de l'inscription</legend>
+
+            <label for="livraison">date et heure de l'inscription :</label>
+            <input type="datetime-local" name="date" id="date">
+
+            <label for="domicile">Domicile</label>
+            <input type="radio" name="livraison" id="relais" value="relais">
+            <label for="relais">Point de Relais</label> 
+
+            <input type="radio" name="livraison" id="retrait" value="Retrait">
+            <label for="retrait">Retrait</label> <br> <br>
+
+            <label for="ville">Ville :</label>
+            <select name="villes" id="ville">
+                <option value="dakar">Dakar</option>
+                <option value="thies">Thies</option>
+                <option value="ziguinchor">Ziguinchor</option>
+                <option value="St-louis">St-Louis</option>
+            </select> <br> <br>
+
+            <label for="quantite">Quantité :</label> 
+            <input type="number" id="quantite" name="quantite" min="1"> <br> <br>
+        </fieldset> <br>
+
+        
+        <label for="date">Date de Livraison :</label> 
+        <input type="date" name="date" id="date"> <br> <br>
+
+        <label for="preferences">Mes Préferences :</label>
+
+        <input type="checkbox" id="emballage" name="preferences" value="emballage">
+        <label for="emballage">Emballage cadeau</label> 
+
+        <input type="checkbox" id="newsletter" name="preferences" value="newsletter">
+        <label for="newsletter">Newsletter</label> 
+
+        <input type="checkbox" id="message" name="preferences" value="message">
+        <label for="message">Message</label> <br> <br>
+        
+        <textarea name="message" id="Avis" placeholder="votre Avis compte"></textarea> <br> <br>
+
+        <input type="submit" value="Envoyer">
+        
+    </form>
+    </main>
+
+    <footer>Pied de page</footer>
+
+
+
+</body>
+</html>
