@@ -5,55 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exo13</title>
     <style>
-        h1{
+        #para1 , #para4{
             color: red;
-            font-size: 45px;
         }
 
-        #para1{
+        div p {
+            font-size: 30px;
+            font-weight:bold;
+            font-family: Algerian;
+        }
+        
+        div + p {
+            font-family: algerian;
             text-decoration: line-through;
             font-size: 25px;
-            text-transform: uppercase;
-        }
-
-        #para2{
-            font-size: 25px;
-            background-color: aqua;
         }
 
         #para3{
-            font-size: 35px;
-            color: red;
-            opacity:0.7;
-        }
-
-        label{
-            font-size: 18px;
-        }
-
-        input{
-            width: 500px;
-        }
-
-        a{
-            background-color: red;
-            text-decoration: none;
-            color: white;
-            border: 2px black outset;
+            background-color: aqua;
             font-size: 20px;
-            padding: 0px 4px;
         }
 
+        #para4{
+            font-size: 20px ;
+        }
+        
+        input[type="text"], input[type="password"]{
+            width: 400px;
+            outline: none;
+        }
+
+        input[type="button"]{
+            background-color: green;
+            color: white;
+            font-size: 15px;
+            transition: 3s;
+        }
+
+        input[type="button"]:hover{
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
+
+        
     </style>
 </head>
 <body>
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. lure, repellendus.</h1>
+    <div id="para1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. lure, repellendus.</p>
+    </div>
 
-    <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatibus eius? </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatibus eius? </p>
 
-    <p id="para2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos rerum vero libero distinctio autem earum cumque fugit veritatis, ea amet voluptatibus ipsam. Doloribus ullam esse cupiditate doloremque qui! Eligendi, maiores.</p>
+    <p id="para3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos rerum vero libero distinctio autem earum cumque fugit veritatis, ea amet voluptatibus ipsam. Doloribus ullam esse cupiditate doloremque qui! Eligendi, maiores.</p>
 
-    <p id="para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatibus eius?</p>
+    <p id="para4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatibus eius?</p>
 
     <form action="">
         
@@ -62,7 +69,8 @@
 
         <label for="MDP">Mot de Passe</label> <br>
         <input type="password"> <br>
-        <a href="#">Se connecter</a>
+        <input type="button" value="Se connecter">
+
     </form>
 </body>
 </html>

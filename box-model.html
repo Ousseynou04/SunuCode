@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Model</title>
+</head>
+<style>
+
+    p{
+        /* border: 10px solid #0000;
+        border: 10px dotted #0000;
+        border: 10px dashed #0000;
+        border: 10px inset #0000;
+        border: 10px outset #0000;
+        border: 10px groove #ff0000; */
+        border: 10px ridge #ff0000;
+        width: 300px;
+        text-align: center;
+        margin: 50px 0px;
+        padding: 10px;
+    }
+
+    input{
+        border-width:10px;
+    }
+
+    #cercle{
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        box-shadow: 1px 1px 5px black, inset 1px 0px 2px 1px red;
+    }
+
+</style>
+<body>
+    <p>Mon Paragraphe</p>
+
+    <input type="text">
+
+    <div id="cercle"></div>
+
+</body>
+</html>
