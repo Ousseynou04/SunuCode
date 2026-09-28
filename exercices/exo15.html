@@ -1,45 +1,54 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exo15</title>
+    <title>exo15</title>
 </head>
+
 <style>
+ul{
+list-style: none;
+float: right;
+}
 
-    #para1{
-    color: orangered;
-    border: 10px groove rgb(255, 115, 0);
-    width: 250px;
-    font-size: 45px;
-    padding: 25px 80px 25px 30px;
-    font-family:Arial;
-    text-shadow: 1px 1px 1px black;
-    margin: 15px 0px 105px 150px;
-    }
+li a{
+text-decoration: none;
+color: black;
+}
 
-    #para2{
-    font-size: 35px;
-    text-transform: uppercase;
-    font-family: Algerian;
-    text-shadow: 4px 5px 7px red;
-    border-bottom-right-radius:  40px;
-    box-shadow: 0px 0px 10px 3px red;
-    width:370px;
-    text-align: center;
-    padding: 15px 10px;
-    transition: 3s;
-    }
+li:hover{
+    background-color: red;
+}
 
-    #para2:hover{
-    transform: rotate(-42deg);
-    box-shadow:inset -6px -4px 8px purple, 1px 1px 1px 0px black;
-    border-radius: 0%;
-    }
+li:hover a{
+    color: white;
+}
+
+
+li{
+display: inline-block;
+border: 1px solid black;
+width: 100px;
+text-align: center;
+transition: 2s;
+}
+
+span{
+display: block;
+}
 
 </style>
 <body>
-    <p id="para1">les modèles de boites</p>
-    <p id="para2">Transformation</p>
+
+    <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">A propos</a></li>
+        <li><a href="#">Formations</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <span> Lorem ipsum dolor. </span>
+    <mark>Lorem ipsum dolor sit.</mark> 
 </body>
 </html>

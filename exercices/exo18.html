@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnShooze</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* ================= HEADER ================= */
+
+        header {
+            background-color: wheat;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+
+        li a:hover {
+            border-bottom: 1px solid;
+        }
+
+        /* ================= HERO ================= */
+
+        .hero {
+            text-align: center;
+            line-height: 2.3;
+            padding-top: 150px;
+            background: linear-gradient(-50deg, rgba(245, 222, 179, 0.76), rgba(0, 0, 0, 0.808)), url('https://cdn.media.amplience.net/i/clarks/db-uk-pace-code-hero-p1-wk35-aw26?fmt=auto&w=750') left / cover;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 50px;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        .hero p {
+            font-size: 30px;
+            color: white;
+        }
+
+        .hero button {
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 14px;
+            background-color: burlywood;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* ================= PRODUITS ================= */
+
+        .collections {
+            padding: 60px 20px;
+        }
+
+        h3 {
+            font-size: 50px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .produits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .produits div {
+            border: 1px solid;
+            padding: 10px;
+            transition: 0.3s;
+            border-radius: 10px;
+        }
+
+        .produits div:hover {
+            box-shadow: 3px 3px 10px gray;
+            transform: translateY(-5px);
+        }
+
+        .produits img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .produits h6 {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .produits p {
+            font-size: 18px;
+            margin-top: 5px;
+        }
+
+        /* ================= CONTACT ================= */
+
+        .contact {
+            background-color: #f5f5f5;
+            padding: 70px 20px;
+        }
+
+        .contact h3 {
+            margin-bottom: 40px;
+        }
+
+        .formulaire {
+            width: 600px;
+            max-width: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .formulaire label {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .formulaire input,
+        .formulaire textarea {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #aaa;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .formulaire textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .formulaire button {
+            padding: 14px;
+            background-color: burlywood;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .formulaire button:hover {
+            background-color: wheat;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer h2 {
+            margin-bottom: 15px;
+        }
+
+        footer p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .reseaux {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-bottom: 20px;
+        }
+
+        .reseaux a {
+            color: white;
+            font-size: 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .reseaux a:hover {
+            color: burlywood;
+            transform: scale(1.2);
+        }
+
+        .copyright {
+            font-size: 14px;
+            border-top: 1px solid #555;
+            padding-top: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+        <nav>
+            <div><h2>SnShooze</h2></div>
+
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#collections">Produits</a></li>
+                <li><a href="#apropos">À Propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ================= HERO ================= -->
+        <section>
+            <div class="hero">
+                <h1>Vos Futures Paires Préférées sont ici</h1>
+                <p>Découvrez nos différentes collections de chaussures</p>
+                <button>Acheter Maintenant</button>
+            </div>
+        </section>
+        <!-- ================= COLLECTIONS ================= -->
+        <section class="collections" id="collections">
+
+            <h3>Nos Collections</h3>
+
+            <div class="produits">
+
+                <div>
+                    <img src="https://offlimits.co.in/cdn/shop/files/OCM-64305_1_1200x1200.jpg?v=1720259294"alt="Sneaker Lexico">
+                    <h6>Nom : Sneaker Lexico</h6>
+                    <p>Prix : 18 000 F</p>
+                </div>
+
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgvE0SYKpwepjYz2t05NsOSMr_B91SNXMr74aY2qPbLQ&s=10"alt="Baskitey">
+                    <h6>Nom : Baskitey</h6>
+                    <p>Prix : 25 000 F</p>
+                </div>
+
+                <div>
+                    <img src="https://image-cdn.hypb.st/https%3A%2F%2Ffr.hypebeast.com%2Ffiles%2F2026%2F08%2Fftfat-joe-Terror-Squad-Nike-Air-Force-1-Low-University-Red-and-White-II4391-100-Release-Info.jpg?w=960&cbr=1&q=90&fit=max"alt="Seprixo">
+                    <h6>Nom : Seprixo</h6>
+                    <p>Prix : 23 500 F</p>
+                </div>
+
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJvNeetGVi0ezhMkebqbNj45Q_9Gmv3l50cPZ87Ov_ug&s=10"alt="Xefiscome">
+                    <h6>Nom : Xefiscome</h6>
+                    <p>Prix : 15 000 F</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= À PROPOS ================= -->
+
+        <section id="apropos">
+            <div style="padding: 70px 20px; text-align: center;">
+                <h3>À Propos</h3>
+                <p>SnShooze vous propose des chaussures tendance, confortables et accessibles pour accompagner votre style au quotidien.</p>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="contact" id="contact">
+
+            <h3>Contactez-nous</h3>
+
+            <form class="formulaire">
+
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Votre adresse email"required>
+
+                <label for="telephone">Téléphone</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="Votre numéro">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Écrivez votre message..." required></textarea>
+
+                <button type="submit">Envoyer le message</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <h2>SnShooze</h2>
+
+        <p>Vos futures paires préférées sont ici.</p>
+
+        <div class="reseaux">
+
+            <a href="#" aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="TikTok">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <a href="#" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+        </div>
+
+        <div class="copyright">© 2026 SnShooze — Tous droits réservés.</div>
+    </footer>
+
+</body>
+</html>
+

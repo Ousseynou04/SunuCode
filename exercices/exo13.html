@@ -1,76 +1,139 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!-- <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exo13</title>
+    <title>exo14</title>
+
     <style>
-        #para1 , #para4{
-            color: red;
-        }
-
-        div p {
+        
+        p{
+            border: 20px red ridge;
+            border-bottom-right-radius:50px ;
             font-size: 30px;
-            font-weight:bold;
-            font-family: Algerian;
-        }
-        
-        div + p {
-            font-family: algerian;
-            text-decoration: line-through;
-            font-size: 25px;
+            text-align: center;
+            padding: 20px;
+            max-width: 450px;
+            margin: 50px auto;
+            box-shadow:-20px -14px 20px 0px rgba(0, 0, 0, 1.00), 20px 19px 20px 0px rgba(0, 0, 0, 1.00);
+            transition: all 3s ease;
         }
 
-        #para3{
-            background-color: aqua;
-            font-size: 20px;
-        }
-
-        #para4{
-            font-size: 20px ;
-        }
-        
-        input[type="text"], input[type="password"]{
-            width: 400px;
-            outline: none;
-        }
-
-        input[type="button"]{
-            background-color: green;
+        p:hover{
+            background-color: black;
             color: white;
-            font-size: 15px;
-            transition: 3s;
+            border: 20px red ridge;
+            height:720px;
+            text-align: center;
+            font-size: 90px;
         }
 
-        input[type="button"]:hover{
-            background-color: red;
-            color: white;
-            cursor: pointer;
-        }
-
-        
     </style>
 </head>
 <body>
-    <div id="para1">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. lure, repellendus.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. suscipit quae.</p>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #navbar{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        align-items: center;
+        padding: auto;
+    }
+
+    #navbar a{
+        text-decoration: none;
+        color: black;
+        justify-content: space-between;
+    }
+
+    #h2{
+        text-align: center;
+    }
+
+    #div1{
+        display: flex;
+        padding: 20px;
+        margin: 8px;
+        gap: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #div1 div{
+        text-align: center;
+        border: 1px  solid black;
+        padding: 10px;
+    }
+
+
+    #navbar ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+        gap: 35px;
+    }
+</style>
+<body>
+    <nav>
+        <div id="navbar">
+            <h1>Boutique Bio Fatou</h1>
+
+            <ul>
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Produits</a></li>
+                <li><a href="">A propos</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h2 id="h2">Nos Produits______FlexBox</h2>
+
+    <div id="div1">
+        <div>
+            <h3>Miel naturel</h3>
+            <p>Prix : 5000F</p>
+        </div>
+
+        <div>
+            <h3>Huile d'olive</h3>
+            <p>Prix : 7000F</p>
+        </div>
+
+        <div>
+            <h3>Jus de Bissap</h3>
+            <p>Prix : 2500F</p>
+        </div>
+
+        <div>
+            <h3>Beurre de Karité</h3>
+            <p>Prix : 4000F</p>
+        </div>
+
+        <div>
+            <h3>Thé naturel</h3>
+            <p>Prix : 3000F</p>
+        </div>
+
+        <div>
+            <h3>Confiture de Mangue</h3>
+            <p>Prix : 3500F</p>
+        </div>
     </div>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatibus eius? </p>
-
-    <p id="para3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos rerum vero libero distinctio autem earum cumque fugit veritatis, ea amet voluptatibus ipsam. Doloribus ullam esse cupiditate doloremque qui! Eligendi, maiores.</p>
-
-    <p id="para4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatibus eius?</p>
-
-    <form action="">
-        
-        <label for="Email">Email</label> <br>
-        <input type="text"> <br>
-
-        <label for="MDP">Mot de Passe</label> <br>
-        <input type="password"> <br>
-        <input type="button" value="Se connecter">
-
-    </form>
 </body>
 </html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+body{
+    background-color: rgb(231, 229, 229);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    padding: 0px 20px;
+    border-radius: 20PX;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    
+}
+
+ul a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+h1{
+    text-align: center;
+    font-family:Arial;
+}
+
+#flex-Produits{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex-Produit{
+    background-color: white;
+    padding:0px 15px;
+    width: 135px;
+    border-radius: 15px;
+}
+
+#grid-Produits{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.grid-Produit{
+    background-color: white;
+    padding:0px 15px;
+    border-radius: 15px;
+}
+
+.grid-Produit:nth-child(2){
+    grid-column: span 2;
+}
+
+</style>
+<body>
+    <nav>
+        <div>
+            <h2>Boutique Bio Fatou</h2>
+        </div>
+
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Produits</a></li>
+            <li><a href="#">A Propos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>Nos Produits ━ Flexbox</h1>
+
+    <div id="flex-Produits">
+        <div class="flex-Produit">
+            <h3>Miel naturel</h3>
+            <p>Prix : 5000F</p>
+        </div>
+
+        <div class="flex-Produit">
+            <h3>Huile d'olive</h3>
+            <p>Prix : 7000F</p>
+        </div>
+
+        <div class="flex-Produit">
+            <h3>Jus de Bissap</h3>
+            <p>Prix : 2500F</p>
+        </div>
+
+        <div class="flex-Produit">
+            <h3>Beurre de Karité</h3>
+            <p>Prix : 4000F</p>
+        </div>
+
+        <div class="flex-Produit">
+            <h3>Thé naturel</h3>
+            <p>Prix : 3000F</p>
+        </div>
+
+        <div class="flex-Produit">
+            <h3>Confiture de Mangue</h3>
+            <p>Prix : 3500F</p>
+        </div>
+    </div>
+
+
+
+    <h1>Nos Produits ━ CSS Grid</h1>
+
+    <div id="grid-Produits">
+        <div class="grid-Produit">
+            <h3>Miel naturel</h3>
+            <p>Prix : 5000F</p>
+        </div>
+
+        <div class="grid-Produit">
+            <h3>Huile d'olive</h3>
+            <p>Prix : 7000F</p>
+        </div>
+
+        <div class="grid-Produit">
+            <h3>Jus de Bissap</h3>
+            <p>Prix : 2500F</p>
+        </div>
+
+        <div class="grid-Produit">
+            <h3>Beurre de Karité</h3>
+            <p>Prix : 4000F</p>
+        </div>
+
+        <div class="grid-Produit">
+            <h3>Thé naturel</h3>
+            <p>Prix : 3000F</p>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>

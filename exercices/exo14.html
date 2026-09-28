@@ -1,36 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exo14</title>
-
-    <style>
-        
-        p{
-            border: 20px red ridge;
-            border-bottom-right-radius:50px ;
-            font-size: 30px;
-            text-align: center;
-            padding: 20px;
-            max-width: 450px;
-            margin: 50px auto;
-            box-shadow:-20px -14px 20px 0px rgba(0, 0, 0, 1.00), 20px 19px 20px 0px rgba(0, 0, 0, 1.00);
-            transition: all 3s ease;
-        }
-
-        p:hover{
-            background-color: black;
-            color: white;
-            border: 20px red ridge;
-            height:720px;
-            text-align: center;
-            font-size: 90px;
-        }
-
-    </style>
+    <title>Exo15</title>
 </head>
+<style>
+
+    #para1{
+    color: orangered;
+    border: 10px groove rgb(255, 115, 0);
+    width: 250px;
+    font-size: 45px;
+    padding: 25px 80px 25px 30px;
+    font-family:Arial;
+    text-shadow: 1px 1px 1px black;
+    margin: 15px 0px 105px 150px;
+    }
+
+    #para2{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: Algerian;
+    text-shadow: 4px 5px 7px red;
+    border-bottom-right-radius:  40px;
+    box-shadow: 0px 0px 10px 3px red;
+    width:370px;
+    text-align: center;
+    padding: 15px 10px;
+    transition: 3s;
+    }
+
+    #para2:hover{
+    transform: rotate(-42deg);
+    box-shadow:inset -6px -4px 8px purple, 1px 1px 1px 0px black;
+    border-radius: 0%;
+    }
+
+</style>
 <body>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. suscipit quae.</p>
+    <p id="para1">les modèles de boites</p>
+    <p id="para2">Transformation</p>
 </body>
 </html>

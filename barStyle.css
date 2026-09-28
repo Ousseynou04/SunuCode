@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    background-color: burlywood;
+    box-shadow: 3px 1px 6px 0px black;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.logo{
+    text-decoration: none;
+    color: brown;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-weight:600;
+}
+
+.menuMobile, #toggleBtn{
+    display: none;
+}
+
+@media (max-width:650px){
+    ul{
+        display: none;
+    }
+
+.menuMobile{
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+
+.bar{
+    width: 25px;
+    height: 2px;
+    background-color: black;
+}
+
+#toggleBtn:checked ~ .menuMobile .bar:nth-child(1){
+    transform: translateY(5px) rotate(-45deg);
+}
+#toggleBtn:checked ~ .menuMobile .bar:nth-child(2){
+    display: none;
+}
+#toggleBtn:checked ~ .menuMobile .bar:nth-child(3){
+    transform: translateY(-2px) rotate(45deg);
+}
+
+#toggleBtn:checked ~ ul{
+    background-color: burlywood;
+    transition: all 3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px;
+
+}
+
+nav{
+    padding: 15px 30px;
+}
+
+}

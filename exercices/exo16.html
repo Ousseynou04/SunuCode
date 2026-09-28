@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exo16</title>
+</head>
+
+<style>
+
+    nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    ul{
+    display: flex;
+    list-style: none;
+    gap:15px;
+    }
+
+    li a{
+    text-decoration: none;
+    font-size: 18px;
+    }
+
+    #logo{
+        line-height: 1px;
+    }
+    #logo h3{
+    font-weight:700;
+    letter-spacing: 42px;
+    }
+
+    #logo p{
+    font-size: 15px;
+    }
+
+    .flex-produit{
+    border: 1px solid black;
+    text-align: center;
+    padding: 25px;
+    }
+
+    #flex-produits{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    }
+
+    #grid, #flex{
+    text-align: center;
+    }
+
+    .grid-produit{
+    text-align: center;
+    border: 1px solid black;
+    }
+
+    #grid-produits{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    }
+
+    .grid-produit:first-child {
+    grid-column: span 2;
+}
+
+</style>
+<body>
+
+<!-- barre de naviguation  -->
+    <nav>
+            <div id="logo">
+                <h3>BBF</h3>
+                <p>Boutique Bio Fatou</p>
+            </div>
+
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Produits</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+    </nav>
+
+    <!-- cartes de produits faites avec le flex-box  -->
+    <h2 id="flex">Cartes de produits avec Flex-box</h2>
+
+    <div id="flex-produits">
+
+        <div class="flex-produit">
+            <h2>Produit 1</h2>
+            <p>Prix : 1000F</p>
+        </div>
+
+        <div class="flex-produit">
+            <h2>Produit 2</h2>
+            <p>Prix : 5000F</p>
+        </div>
+
+        <div  class="flex-produit"> 
+            <h2>Produit 3</h2>
+            <p>Prix : 4500F</p>
+        </div>
+
+        <div  class="flex-produit">
+            <h2>Produit 4</h2>
+            <p>Prix : 7500F</p>
+        </div>
+
+        <div  class="flex-produit">
+            <h2>Produit 5</h2>
+            <p>Prix : 15000F</p>
+        </div>
+
+        <div  class="flex-produit">
+            <h2>Produit 6</h2>
+            <p>Prix : 8000F</p>
+        </div>
+
+    </div>
+
+    <!-- cartes de produits faites avec le grid-css  -->  
+    <h2 id="grid">Cartes de produits avec Grid-css</h2>
+    
+    <div id="grid-produits">
+
+        <div class="grid-produit">
+            <h2>Produit 1 / en promo</h2>
+            <p>Prix : 1000F</p>
+        </div>
+
+        <div class="grid-produit">
+            <h2>Produit 2</h2>
+            <p>Prix : 5000F</p>
+        </div>
+
+        <div  class="grid-produit"> 
+            <h2>Produit 3</h2>
+            <p>Prix : 4500F</p>
+        </div>
+
+        <div  class="grid-produit">
+            <h2>Produit 4</h2>
+            <p>Prix : 7500F</p>
+        </div>
+
+        <div  class="grid-produit">
+            <h2>Produit 5</h2>
+            <p>Prix : 15000F</p>
+        </div>
+
+        <div  class="grid-produit">
+            <h2>Produit 6</h2>
+            <p>Prix : 8000F</p>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
