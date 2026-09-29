@@ -1,0 +1,160 @@
+revision du code : <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/exo19.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-success fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white fw-semibold" href="#">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUVPY0f9jJIg4LZAsNW2DzeKhHkSc9VkzBPa0Flo-5KN1YmlOOnyTW2FO0&s=10" alt="logo" class="rounded rounded-pill" width="50" height="45">
+                    SnResto
+                </a>
+
+                <!-- Bouton hamburger -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Ouvrir le menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ms-auto gap-lg-3">
+                        <li class="nav-item"><a class="nav-link text-white fw-semibold active" href="#accueil">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#plats">Nos Plats</a></li>
+                        <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#about">À propos</a></li>
+                        <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="accueil p-5" id="accueil">
+            <div class="p-5 mt-5">
+                <h2 class="titre-accueil text-center text-white fw-bold">Découvrez les vraies saveurs du Sénégal</h2>
+                <p class="text-center text-white">L'authenticité de la cuisine sénégalaise dans votre assiette : des plats généreux, des épices maîtrisées et le vrai goût de la Teranga.</p>
+            </div>
+
+            <div class="text-center">
+            <a href="#plats" class="btn btn-success fw-semibold fs-5">Decouvrez nos specialités</a>
+            </div>
+
+        </section>
+
+        <section class="plats" id="plats">
+            <div class="py-5">
+                <h2 class="text-center mb-3">Nos Plats</h2>
+                <div class="container-fluid d-flex justify-content-center flex-wrap gap-3">
+                    <div class="col-3 card" style="width: 18rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTevtCk99GfsOVLre9VtBy0req9JMO38M_7YHNnn0ivIg&s=10" class="card-img-top" width="550" height="200" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Thiebou Dieune</h5>
+                            <p class="card-text">Prix : 2500F</p>
+                            <a href="#" class="btn btn-primary">Commander</a>
+                        </div>
+                    </div>
+
+                    <div class="col-3 card" style="width: 18rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2MOMQsgrlQ-XkJg9OK7LuuNbSMl6DODuFa1ijPy5A7A&s=10" class="card-img-top" width="550" height="200" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Yassa Poulet</h5>
+                            <p class="card-text">Prix : 4500F</p>
+                            <a href="#" class="btn btn-primary">Commander</a>
+                        </div>
+                    </div>
+
+                    <div class="col-3 card" style="width: 18rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmsLWTllaQWzh9l-YQwHMva44gTkDX7NFNOF2joEiUuQ&s=10" class="card-img-top" width="550" height="200" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Domoda</h5>
+                            <p class="card-text">Prix : 1500F</p>
+                            <a href="#" class="btn btn-primary">Commander</a>
+                        </div>
+                    </div>
+
+                    <div class="col-4 card" style="width: 18rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqn7IpqaJFiZBASlfvRvRXgo_2GeJslu331CMtibqpbQ&s=10" class="card-img-top" width="550" height="200" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mbaxalou Saloum</h5>
+                            <p class="card-text">Prix : 2000F</p>
+                            <a href="#" class="btn btn-primary">Commander</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div id="about">
+                <h2 class="text-center">À propos de Nous</h2>
+                <div class="container-fluid row d-flex align-items-center p-5">
+                    <p class="text-center col-12 col-lg-6 px-4">
+                        Bienvenue à <span class="text-success fw-semibold">SnResto</span>, votre destination culinaire pour découvrir l'authentique cuisine sénégalaise. Depuis notre ouverture, nous nous engageons à vous offrir une expérience gastronomique inoubliable en mettant en avant les saveurs traditionnelles du Sénégal. <br> <br>
+                        Notre équipe de chefs passionnés prépare chaque plat avec des ingrédients frais et de qualité, en respectant les recettes ancestrales sénégalaises. Nous croyons que la cuisine est un art de partage et de convivialité, et c'est pourquoi nous vous accueillons comme une famille. <br> <br>
+                        La cuisine sénégalaise est réputée pour sa richesse, ses saveurs généreuses et ses techniques culinaires raffinées. Chaque plat raconte une histoire, celle du Sénégal, de sa culture et de ses traditions. Venez vivre cette expérience authentique avec nous et laissez-vous transporter par les saveurs du Teranga.
+                    </p>
+                    <img src="https://prod.cdn-medias.jeuneafrique.com/cdn-cgi/image/q=auto,f=auto,metadata=none,width=1280,height=960,fit=cover/https://prod.cdn-medias.jeuneafrique.com/medias/2020/12/22/jad20201222-culture-thieboudieune.jpg" class="col-12 col-lg-6  rounded-5" height="350" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="contact bg-success-subtle p-5">
+            <h2 class="text-center text-success" id="contact">Nous Contacter</h2>
+        <div class="row container-fluid p-4">
+            <div class="col-12 col-lg-7 py-5">
+                <h3>Info Utiles</h3>
+                <p class="fs-5">Notre Adresse :<br> 123 Avenue Cheikh Anta DiopDakar, Sénégal</p>
+                <p class="fs-5">Telephone :<br> 77 123 45 67</p>
+                <p class="fs-5">Email :<br> SnResto@gmail.com</p>
+                <p class="fs-5">Horaires :<br> Du Lundi au Samedi / 10h-22h</p>
+            </div>
+
+            <div class="col-12 col-lg-5 border border-2 p-5 rounded-5 bg-body-tertiary">
+                <h3>Formulaire</h3>
+                <form>  
+                <div class="mb-3">
+                    <label for="nom" class="form-label">Votre nom</label>    
+                    <input type="text" class="form-control" placeholder="Nom" id="nom">  
+                </div> 
+                <div class="mb-3">
+                    <label for="prenom" class="form-label">Votre prenom</label>    
+                    <input type="text" class="form-control" placeholder="Prenom" id="prenom">  
+                </div> 
+                <div class="mb-3">    
+                    <label for="email" class="form-label">Votre email</label>    
+                    <input type="email" class="form-control" placeholder="email" id="email">  
+                </div>  
+                <button type="submit" class="btn btn-primary w-100">Envoyer</button> 
+            </form>
+            </div>
+        </div>
+            
+        </section>
+
+        <footer class="bg-dark p-5">
+        <h2 class="text-white text-center fs-1">SnResto</h2>
+
+        <p class="text-white text-center fs-5 mb-5">Suivez Nous dans nos differents Reseaux.</p>
+
+        <div class="reseaux text-center gap-5 d-flex justify-content-center mb-5">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook fa-xl text-white"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram fa-xl text-white"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok fa-xl text-white"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp fa-xl text-white"></i></a>
+        </div>
+        <hr class="text-white">
+        <div class="copyright text-center text-white">&copy; 2026 SnResto — Tous droits réservés.</div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

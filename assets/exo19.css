@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.accueil{
+    background: linear-gradient(rgba(27, 122, 58, 0.6)), url("https://recettesdafrique.com/wp-content/uploads/2020/12/Le-Thieboudienne.jpg") center/cover;
+    min-height: 70vh;
+}
+
+.titre-accueil{
+    font-size: 58px;
+    font-family:cursive;
+}
