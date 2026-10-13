@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratique</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+    <header>
+
+            <nav class="navbar navbar-expand-sm py-3 navbar-light bg-warning">
+                <div class="container">
+                    <a class="navbar-brand fs-4 fw-bold" href="#">wiflix</a>
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                            <li class="nav-item"><a class="nav-link active fs-5" href="#" aria-current="page"><i class="bi bi-house-fill fs-5"></i> Accueil<span class="visually-hidden">(current)</span></a></li>
+                            <li class="nav-item"><a class="nav-link fs-5" href="#">Apropos</a></li>
+                            <li class="nav-item"><a class="nav-link fs-5 href="#">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link fs-5" href="#">Produit</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle fs-5" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item" href="#">Action 1</a>
+                                    <a class="dropdown-item" href="#">Action 2</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <main>
+                <div class="container p-5">
+                    <div class="border">
+                        <div class="d-flex justify-content-between align-items-center bg-light p-3">
+                            <h3>Listes des produits</h3>
+                            <a href="#" class="btn btn-warning">Ajouter</a>
+                        </div>
+
+                        <div class="p-5">
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <th>Images</th>
+                                    <th>Nom</th>
+                                    <th>Prix</th>
+                                    <th>description</th>
+                                    <th>categorie</th>
+                                    <th>Actions</th>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td class="w-25"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd21OHiFoHh3MlL15TBULwY-AoMlE1SVJJ96U_cCJKgg&s=10" height="200" width="200" alt=""></td>
+                                        <td class="text-nowrap">iphone 16</td>
+                                        <td class="text-nowrap">450000 FCFA</td>
+                                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate labore ea dolor possimus tempora incidunt fugit maxime odit suscipit? In nemo eveniet magnam commodi ab maxime omnis cumque ex a.</td>
+                                        <td>Telephone</td>
+                                        <td class="w-25"><i class="bi bi-pencil-square bg-warning py-1 px-2 rounded-2"></i> <i class="bi bi-trash3 bg-danger py-1 px-2 rounded-2 text-white"></i></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="w-25"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx91ucajS3qcPG-ZDmV96jHucyWP8oLtgz5JbmnkfiCw&s=10" height="200" width="200" alt=""></td>
+                                        <td class="text-nowrap">iphone 17</td>
+                                        <td class="text-nowrap">550000 FCFA</td>
+                                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate labore ea dolor possimus tempora incidunt fugit maxime odit suscipit? In nemo eveniet magnam commodi ab maxime omnis cumque ex a.</td>
+                                        <td>Telephone</td>
+                                        <td class="w-25"><i class="bi bi-pencil-square bg-warning py-1 px-2 rounded-2"></i> <i class="bi bi-trash3 bg-danger py-1 px-2 rounded-2 text-white"></i></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="w-25"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4U_iQODSByMJ6uMuJrXMnsZJDO11rBAthXABzEuXfKw&s=10" height="200" width="200" alt=""></td>
+                                        <td class="text-nowrap">iphone 18</td>
+                                        <td class="text-nowrap">950000 FCFA</td>
+                                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate labore ea dolor possimus tempora incidunt fugit maxime odit suscipit? In nemo eveniet magnam commodi ab maxime omnis cumque ex a.</td>
+                                        <td>Telephone</td>
+                                        <td class="w-25"><i class="bi bi-pencil-square bg-warning py-1 px-2 rounded-2"></i> <i class="bi bi-trash3 bg-danger py-1 px-2 rounded-2 text-white"></i></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer>    
+                <div class="bg-dark py-3 d-flex justify-content-around">
+                    <p class="text-white">&copy; 2026 - tous droits réservés wiflix</p>
+                    <p class="text-white">Conçu par <span class="text-warning">Cohorte 17</span></p>
+                </div>
+            </footer>
+
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
